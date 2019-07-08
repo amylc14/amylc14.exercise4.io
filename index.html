@@ -6,21 +6,89 @@
     <title>css exercise four</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <section class="container">
-      <h1>Modern luxury <span class="emphasis">travel</span></h1>
-      <div class="preview baku">
-        <h2>Baku</h2>
+      <div class="navigation">
+        <i class="fa fa-chevron-left"></i>
+        <h1>Washington & State St.</h1>
       </div>
-      <div class="preview london">
-        <h2>London</h2>
-      </div>
-      <div class="preview madrid">
-        <h2>Madrid</h2>
-      </div>
-      <div class="preview rome">
-        <h2>Rome</h2>
+      <form>
+        <div class="searchContainer">
+          <i class="fa fa-search searchIcon"></i>
+          <input class="searchBox" type="search" name="search" placeholder="Search">
+        </div>
+      </form>
+      <div class="map"></div>
+      <div class="bus-list">
+        <h2>Buses</h2>
+        <table>
+          <thead>
+            <td width="15%">Line</td>
+            <td width="60%">Destination</td>
+            <td width="25%">Time</td>
+            <td width="25%">Freq</td>
+          </thead>
+          <tbody>
+            <tr class="line-header">
+              <td colspan="4">Eastbound</td>
+            </tr>
+            <tr class="bus">
+              <td class="line">60</td>
+              <td>Randolph/Harbor Dr</td>
+              <td>5:55pm</td>
+              <td class="freq">5min</td>
+            </tr>
+            <tr class="bus">
+              <td class="line">124</td>
+              <td>Navy Pier</td>
+              <td>6:00pm</td>
+              <td class="freq">10min</td>
+            </tr>
+            <tr class="line-header">
+              <td colspan="4">Northbound</td>
+            </tr>
+            <tr class="bus">
+              <td class="line">151</td>
+              <td>Devon/Clark</td>
+              <td>6:05pm</td>
+              <td class="freq">16min</td>
+            </tr>
+            <tr class="line-header">
+              <td colspan="4">Southbound</td>
+            </tr>
+            <tr class="bus">
+              <td class="line">J14</td>
+              <td>103rd/Stony Island</td>
+              <td>6:10pm</td>
+              <td class="freq">15min</td>
+            </tr>
+            <tr class="bus">
+              <td class="line">124</td>
+              <td>Navy Pier</td>
+              <td>6:20pm</td>
+              <td class="freq">10min</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Reroute</h2>
+        <table>
+          <thead>
+            <td width="15%">Line</td>
+            <td width="60%">Destination</td>
+            <td width="25%">Time</td>
+            <td width="25%">Freq</td>
+          </thead>
+          <tbody>
+            <tr class="bus">
+              <td class="line">60</td>
+              <td>Randolph/Harbor Dr</td>
+              <td>5:55pm</td>
+              <td class="freq">5min</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
   </body>

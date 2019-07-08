@@ -1,24 +1,123 @@
 body {
-  background-color: #dadada;
+  background-color: #f8f8f8;
   font-size: 10px;
+  font-family: sans-serif;
 }
 .container {
   width: 100vw;
-  margin: 10px auto;
 }
 h1 {
   width: 100%;
   text-align: center;
-  text-transform: uppercase;
-  margin: 20px 0;
-  font-size: 150%;
-  font-family: sans-serif;
 }
 h2 {
-  margin-left: 38px;
-  padding-top: 38px;
   font-size: 2.7em;
+  color: #2081a1;
+  padding: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid lightgray;
 }
+.navigation {
+  margin: 20px;
+  font-size: 1.8em;
+  display: flex;
+}
+
+.navigation i.fa-chevron-left {
+  display: inline-block;
+  float: left;
+  color: #157efb;
+  font-size: 1.5em;
+}
+
+.navigation h1 {
+  float: left;
+  line-height: 1.2em;
+}
+
+form {
+  width: 100%;
+}
+
+.searchContainer {
+  display: flex;
+  border: 1px solid #ebebec;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px;
+  font-size: 20px;
+  background-color: #ebebec;
+}
+
+.searchIcon {
+  padding: 0.5rem;
+  color: gray;
+  opacity: 0.9;
+}
+
+.searchBox {
+  border: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  flex: 1;
+  font-size: inherit;
+  background-color: #ebebec;
+}
+
+.searchBox::placeholder {
+  color: gray;
+  opacity: 0.9;
+}
+
+.searchButton {
+  background: #538AC5;
+  border: 0;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0;
+}
+
+.map {
+  background-image: url(../images/bus-stop-map.png);
+  background-size: contain;
+  height: 199px;
+}
+
+.bus-list table {
+  color: #2081a1;
+  font-size: 1.8em;
+}
+
+.bus-list table thead {
+  border-bottom: 1px solid lightgray;
+  line-height: 2em;
+}
+
+.bus-list table tr.line-header {
+  background-color: lightgray;
+  color: white;
+}
+
+.bus-list table tr.bus {
+  line-height: 2.5em;
+  border-bottom: 1px solid lightgray;
+}
+
+.bus-list table td {
+  padding: 5px;
+}
+
+.bus-list table td:first-child {
+  padding-left: 10px;
+}
+
+.bus-list table td.line, .bus-list table td.freq {
+  color: #d96a25;
+}
+
+.bus-list table td:last-child {
+  padding-right: 10px;
+}
+
 .preview {
   background-size: cover;
   background-repeat: no-repeat;
@@ -47,16 +146,4 @@ h2 {
    .preview {
      width: 23%;
   }
-}
-.baku {
-  background-image: url(../images/baku.jpg);
-}
-.london {
-  background-image: url(../images/london.png);
-}
-.madrid {
-  background-image: url(../images/madrid.jpg);
-}
-.rome {
-  background-image: url(../images/rome.jpg);
 }
