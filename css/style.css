@@ -13,7 +13,7 @@ h1 {
 h2 {
   font-size: 2.7em;
   color: #2081a1;
-  padding: 20px;
+  padding: 20px 10px;
   font-weight: 600;
   border-bottom: 1px solid lightgray;
 }
@@ -44,7 +44,7 @@ form {
   border: 1px solid #ebebec;
   border-radius: 10px;
   overflow: hidden;
-  margin: 5px;
+  margin: 7px 10px;
   font-size: 20px;
   background-color: #ebebec;
 }
@@ -74,6 +74,12 @@ form {
   color: white;
   padding: 0.5rem;
   border-radius: 0;
+}
+
+.status-bar {
+  background-image: url(../images/status-bar.png);
+  background-size: contain;
+  height: 23px;
 }
 
 .map {
