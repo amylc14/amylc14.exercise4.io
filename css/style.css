@@ -79,7 +79,9 @@ form {
 .status-bar {
   background-image: url(../images/status-bar.png);
   background-size: contain;
-  height: 23px;
+  background-repeat: no-repeat;
+  height: 29px;
+  background-color: black;
 }
 
 .map {
